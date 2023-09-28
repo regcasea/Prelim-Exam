@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <body style="background-color: rgb(255, 245, 231);">
+        
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="images/vangogh.jpeg" alt="" style="height: 60px;"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--carousel-->
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/starry_night.jpeg" class="d-block w-100" alt="abstract image" height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Starry Night</h5>
+              <p>Starry Night is one of the most recognized pieces of art in the world.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/irises_full.jpeg" class="d-block w-100" alt="..." height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Irises</h5>
+              <p>Inspired by the nature surrounding him, Van Gogh began his work on Irises within the first week of his stay at the asylum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cafe_full.jpeg" class="d-block w-100" alt="..." height="700px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Night Cafe</h5>
+              <p>Van Gogh was interested in painting night scenes, as can be seen in his paintings of Starry Night and Café Terrace at Night.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--end carousel-->
+
+      <!--gallery-->
+
+      <h2 id="Gallery" class="text-center pd-5 mt-5 mb-5">Gallery</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Autumn-Landscape.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Autumn Landscape</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Bowl-with-Peonies-and-Roses.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Bowl with Peonies and Roses</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Bridge-across-the-Seine-at-Asnieres.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Bridge Across the Seine at Asnieres</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Boulevard-de-Clichy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Boulevard de Clichy</p>
+                    </div>
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end gallery-->
+    <!--portfolio-->
+    <h2 id="Portfolio" class="text-center pd-5 mt-5 mb-5">Portfolio</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ynjkcEocJzA?si=_8YCPB7JzbrLCKAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lLBDAXy8FuA?si=MLWc-aUzcaZk7gEz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+       
+    
+    <!--about-->
+    <h2 id="About" class="text-center pd-5 mt-5 mb-5">About</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center fs-5">Welcome to the Van Gogh Gallery - the definitive reference for information about the life and work of Vincent van Gogh. With a career that ran a little over a decade, he produced an astonishing amount of work: 1,000 drawings, 150 watercolors, 10 watercolors, 9 lithographs, an etching, and over 900 paintings. We have also put together his biography, spanning his youth until death, going into his mental state, his influences, and the world in which he lived. We hope to share Van Gogh’s legacy with as many people as we can and give his genius the appreciation he lacked in life.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <h2 id="Contact" class="text-center pd-5 mt-5 mb-5">Contact</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Balayhangin+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+            </div>
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="text-center bg-info-subtle">&copy The Vangogh Gallery
+            <a href="https://www.facebook.com/RegynKimberly/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/regcasea/?fbclid=IwAR2FnpZIdlGNSeEWB7If9u996Lt_jmL_tk48yVMYUpq4z6ZliDOsApwsfk4"><i class="fa-brands fa-square-instagram"></i></a>
+        </p>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/a2a11329e5.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
